@@ -71,6 +71,12 @@ rqt_image_view
 
 change the topic to '/image_debug' to view the camera view and target detection
 
+## Testing your code
+to test your code, do the (Run the simulation) steps after editing the code. Then use the 'SwitchPanel' in the gui to switch between Position Controller, or Visual Servo controller. (Position Controller is the default controller that doesn't use your code and you can use it to go to the initial point, then switch to the visual servo controller that uses your code to test your code). Before switching to the visual servo controller, choose the visual servo mode (IBVS or PBVS).
+
+### Note
+There is a bug in the gui that doesn't register the first switch in the SwitchPanel. After the second switch, it works fine.
+
 ## Stop the docker
 
 To stop the docker, exit the interactive session by
@@ -82,3 +88,7 @@ then run the stop script
 ```
 ./stop.sh
 ```
+
+## Video instructions
+
+Watch [this](https://youtu.be/nH8haXbUuuc) video for step by step instructions.
