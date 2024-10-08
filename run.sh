@@ -12,6 +12,6 @@ docker run -it \
     --cpus="${MAX_CPUS}" \
     --memory-swap="${TOTAL_MEM_MB}m" \
     --gpus all \
-    ros_noetic:latest \
+    mmousaei/16667_visual_servo \
     bash -c "source ~/.bashrc && cd /home/visual_servo_ws/src/mavros/mavros/scripts/ && ./install_geographiclib_datasets.sh && cd ../../../.. && source devel/setup.bash && bash"
 
