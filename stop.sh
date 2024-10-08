@@ -1,0 +1,1 @@
+docker rm 16_667_VS

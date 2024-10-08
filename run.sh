@@ -4,7 +4,7 @@ TOTAL_MEM_MB=$((TOTAL_MEM / 1024))
 MAX_CPUS=$(nproc)
 docker run -it \
     --name 16_667_VS \
-    --env="DISPLAY=:1" \
+    --env="DISPLAY=${DISPLAY}" \
     --env="QT_X11_NO_MITSHM=1" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
     --privileged \

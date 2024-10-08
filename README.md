@@ -24,18 +24,16 @@ restart
 ```
 
 
-## Build the docker
-
-This will take 10-20 minutes to complete
+## Pull the docker
 
 ```
-docker build -t ros_noetic:latest .
+docker pull mmousaei/16667_visual_servo
 ```
 
 ## Run the docker
 
 ```
-sudo chmod +x run.sh
+sudo chmod +x run.sh stop.sh
 ./run.sh
 ```
 
@@ -44,7 +42,7 @@ sudo chmod +x run.sh
 In the terminal that you started the docker, source the workspace
 
 ```
-source devel/setup.bash
+source /home/visual_servo_ws/devel/setup.bash
 ```
 
 In another terminal, open the docker interactive session and run the roscore
@@ -72,3 +70,15 @@ rqt_image_view
 ```
 
 change the topic to '/image_debug' to view the camera view and target detection
+
+## Stop the docker
+
+To stop the docker, exit the interactive session by
+
+```
+exit
+```
+then run the stop script
+```
+./stop.sh
+```
