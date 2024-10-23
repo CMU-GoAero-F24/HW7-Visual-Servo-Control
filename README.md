@@ -88,6 +88,11 @@ then run the stop script
 ```
 ./stop.sh
 ```
+### Note
+Stop script removes the docker container, and therefore your changes to the code inside of it. Please take a copy of your code before running the stop script.
+
+## Working on airstations at SQH
+To work on the HW at one of the airstations located at SQH offices, you just need to clone this repo, run ./run.sh scrtip, and follow the rest of the instructions from [Run The Simulation] step
 
 ## Video instructions
 
